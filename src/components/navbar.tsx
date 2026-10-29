@@ -2,11 +2,9 @@ import Logo from "./logo";
 import Btn1 from "./Btn1";
 import { NavigateHover } from "./navHover";
 import { useAuth } from "@/Context/AuthContext";
-import { useState } from "react";
 
 const Navbar = () => {
   const { user, loading } = useAuth();
-  const [loggedIn, setLogedIn] = useState();
 
   return (
     <>

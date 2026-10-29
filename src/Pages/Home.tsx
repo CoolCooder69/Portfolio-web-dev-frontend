@@ -69,7 +69,7 @@ const galleryImages: string[] = [
 
 
 const Home = ()=> {
-  let {user, loading} = useAuth(); 
+  let {user} = useAuth(); 
   return (
     <>
       {/* Profile */}

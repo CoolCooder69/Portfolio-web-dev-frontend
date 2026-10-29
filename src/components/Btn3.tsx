@@ -7,7 +7,7 @@ interface IBtn3props {
     load: boolean,
 }
 
-const Btn3 = ({title, url, onClick, load}: IBtn3props)=> {
+const Btn3 = ({title,  onClick, load}: IBtn3props)=> {
     return <>
         <button onClick={onClick} className="px-5 py-2 text-white rounded-4xl bg-black transition-all hover:scale-110">
             {load ? <Loader2 className="animate-spin" /> : title}

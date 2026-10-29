@@ -21,7 +21,7 @@ const Login = () => {
     setLoading(true);
     setError(false);
     try {
-      const res = await fireBase?.loginInWIthMailAndPassword({ ...form });
+       await fireBase?.loginInWIthMailAndPassword({ ...form });
       navigate("/signup"); 
     } catch (e) {
       console.log(e);
