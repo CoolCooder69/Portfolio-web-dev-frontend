@@ -10,7 +10,9 @@ const Btn1 = ({ name, link }: Btn1Props) => {
 
   return (
     <button
-      onClick={() => navigate(link)}
+      onClick={() => {
+        if (link) navigate(link); 
+      }}
       className="max-h-fit max-w-fit min-w-24 bg-yellow-200 text-sm px-6 py-3 cursor-pointer rounded-xl text-black font-medium transition duration-75"
     >
       {name}
